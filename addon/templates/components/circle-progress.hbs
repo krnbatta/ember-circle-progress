@@ -1,0 +1,9 @@
+<div class="heading">{{label}}</div>
+<div class="wrap">
+	<div class="text">{{percentage}}%</div>
+	<svg {{bind-attr width=width height=height}}>
+		<circle fill="none" stroke-dashoffset=0 {{bind-attr r=r cx=cx cy=cy stroke-dasharray=cf}}></circle>
+		<circle fill="none" stroke-dashoffset=0 {{bind-attr class=':arc poor good' r=r cx=cx cy=cy
+		stroke-dasharray=cf}}></circle>
+	</svg>
+</div>
